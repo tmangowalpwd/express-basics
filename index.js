@@ -1,6 +1,8 @@
 const express = require("express")
 const app = express();
 
+const { nanoid } = require("nanoid")
+
 const PORT = 2000
 
 app.use(express.json());
@@ -8,6 +10,18 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("<h1>Welcome to my Express API</h1>")
 })
+
+// 1. Employee database
+//    a. full_name
+//    b. occupation
+//    c. gender
+//    d. id
+// 2. Route untuk get semua employee
+// 3. Route untuk get employee by ID
+// 4. Route untuk tambah employee
+// 5. Route untuk edit employee
+// 6. Route untuk delete employee
+
 
 const users = [
   {
